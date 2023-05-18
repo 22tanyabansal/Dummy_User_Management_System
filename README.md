@@ -49,10 +49,13 @@ Alternatively, if you're not using Composer, you can download PHPMailer as a zip
 
 `<?php
 use PHPMailer\PHPMailer\PHPMailer;
+
 use PHPMailer\PHPMailer\Exception;
 
 require 'path/to/PHPMailer/src/Exception.php';
+
 require 'path/to/PHPMailer/src/PHPMailer.php';
+
 require 'path/to/PHPMailer/src/SMTP.php';`
 If you're not using the SMTP class explicitly (you're probably not), you don't need a use line for the SMTP class. Even if you're not using exceptions, you do still need to load the Exception class as it is used internally.
 
